@@ -11,9 +11,9 @@
     <div class="header">
       <a class="title_button" href="index.html">Manjit Das</a>
       <a class="gallery_button tab" href="portfolio.html">Portfolio</a>
-      <a class="about_button tab" href="events.html">Events</a>
+      <a class="about_button tab" href="#">Events</a>
       <a class="store_button tab" href="#">Store</a>
-      <a class="contact_button tab" href="Contact.html">Contact</a>
+      <a class="contact_button tab" href="#">Contact</a>
     </div>
     <div class="intro">
       <img class="intro_pic" src="PSX_20200108_195628.jpeg" alt="Manjit Das" />
@@ -27,7 +27,7 @@
       </p>
     </div>
     <p class="rw">RECENT WORKS</p>
-    <div class="grid-container">
+    <div class="grid-container" id="myGrid">
       <a href="#" class="grid-item">
         <img src="PSX_20220302_082452.jpeg" alt="Image 1" />
       </a>
@@ -92,5 +92,16 @@
       </div>
       <p class="footnote">© By Manjit Das.</p>
     </footer>
+    <script>
+      // Toggle grid padding
+      function myFunction() {
+        var x = document.getElementById("myGrid");
+        if (x.className === "grid-item") {
+          x.className = "w3-row-padding";
+        } else {
+          x.className = x.className.replace("w3-row-padding", "w3-row");
+        }
+      }
+    </script>
   </body>
 </html>
